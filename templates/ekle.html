@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <form method="post">
+        {% csrf_token %}
+     <table border="1">
+      <tr>
+        <td>Adi:</td>
+        <td>
+          <input type="text" name="kAdi" value="{{ q.kAdi }}"/>
+        </td>
+      </tr>
+      <tr>
+        <td>Soyadi:</td>
+        <td>
+          <input type="text" name="kSoyadi" value="{{ q.kSoyadi }}"/>
+        </td>
+      </tr>
+      <tr>
+        <td>Tel:</td>
+        <td>
+          <input type="text" name="kTel" value="{{ q.kTel }}"/>
+        </td>
+      </tr>
+      <tr>
+        <td>E:Mail</td>
+        <td>
+          <input type="email" name="keMail" value="{{ q.keMail }}"/>
+        </td>
+      </tr>
+        <tr>
+        <td>T.C.</td>
+        <td>
+          <input type="text" name="ktc" value="{{ q.ktc }}"/>
+        </td>
+      </tr>
+         <tr>
+        <td>Dosya:</td>
+        <td>
+          <input type="file" name="keMail" value="{{ q.kimage }}"/>
+        </td>
+      </tr>
+         <tr>
+        <td>Şehir:</td>
+        <td>
+          <input type="text" name="ksehir" value="{{ q.ksehir }}"/>
+        </td>
+        </tr>
+         <tr>
+        <td>İlçe</td>
+        <td>
+          <input type="text" name="kilce" value="{{ q.kilce }}"/>
+        </td>
+        </tr>
+         <tr>
+        <td>Mahalle:</td>
+        <td>
+          <input type="text" name="kmahalle" value="{{ q.kmahalle }}"/>
+        </td>
+        </tr>
+         <tr>
+        <td>Sokak:</td>
+        <td>
+          <input type="text" name="ksokak" value="{{ q.ksokak }}"/>
+        </td>
+        </tr>
+         <tr>
+        <td>No:</td>
+        <td>
+          <input type="text" name="kno" value="{{ q.kno }}"/>
+        </td>
+        </tr>
+         <tr>
+        <td>Kullanıcı Adı:</td>
+        <td>
+          <input type="text" name="kullaniciA" value="{{ q.kullaniciA }}"/>
+        </td>
+        </tr>
+         <tr>
+        <td>Sifre:</td>
+        <td>
+          <input type="text" name="kullaniciS" value="{{ q.kullaniciS }}"/>
+        </td>
+        </tr>
+         <tr>
+        <td>Tekrar Şifre:</td>
+        <td>
+          <input type="text" name="kullaniciTS" value="{{ q.kullaniciTS }}"/>
+        </td>
+        </tr>
+      <tr>
+          <td></td>
+          <td>
+              <button type="submit">Kaydet</button>
+          </td>
+      </tr>
+     </table>
+    </form>
+</body>
+</html>

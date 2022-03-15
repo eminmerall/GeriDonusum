@@ -1,0 +1,120 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8" name="viewport" content="with">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href=" {% static '/../media/css/font-awesome/font-awesome/css/font-awesome.css' %}" >
+    <link rel="stylesheet" href=" {% static '/../media/css/homestyle.css' %}" >
+    <link rel="stylesheet" href=" {% static '/../media/css/style.css' %}" >
+    <link rel="stylesheet" href=" {% static '/../media/css/animate.css' %}" >
+
+
+    <link type="text/css" media="all" href="https://atiknakit.com/wp-content/cache/autoptimize/css/autoptimize_15e5810561f1c7557fafd15c17fa0134.css" rel="stylesheet">
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src=" {% static '/../media/js/jquery.min.js' %}" ></script>
+
+    <title>Randevu Al</title>
+</head>
+<body>
+<!-- ------------TopBar------------ -->
+<section id="topbar" class="d-none d-lg-block my-0 bg-light " >
+    <div class="container clearfix">
+      <div class="contact-info float-left">
+        <i class="fa fa-envelope-o"></i> <a href="mailto:contact@example.com">contact@example.com</a>
+        <i class="fa fa-phone"></i> +1 5589 55488 55
+      </div>
+      <div class="social-links float-right">
+        <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
+        <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
+        <a href="#" class="instagram"><i class="fa fa-instagram"></i></a>
+        <a href="#" class="google-plus"><i class="fa fa-google-plus"></i></a>
+        <a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
+      </div>
+    </div>
+  </section>
+<!-- End TopBar --------- -->
+<br>
+<!-- ====== Navbar Çubuğu ======= -->
+<nav class="navbar navbar-expand-sm navbar-dark my-2 " style="background-color: rgba(64, 64, 64, 0.8)" >
+    <div text-align="center"><img class="logo-footer" src="{% static '../media/img/logo3.png' %} "alt="resim" data-at2x="/Media/img/logo3.png" width="150" height="100"></div>
+
+  <ul class="navbar-nav ml-auto" >
+    <li class="nav-item active">
+      <a class="nav-link" href="http://localhost:8000/">Anasayfa</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="http://localhost:8000/hakkimizda">Hakkımızda</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="http://localhost:8000/geridonusum">Geri Dönüşüm Nedir?</a>
+    </li>
+      <li class="nav-item">
+      <a class="nav-link" href="http://localhost:8000/randevu">Randevu Al</a>
+    </li>
+      <li class="nav-item">
+      <a class="nav-link" href="http://localhost:8000/kayitol">Kayıt Ol</a>
+    </li>
+      <li class="nav-item">
+      <a class="nav-link" href="http://localhost:8000/iletisim">İletişim</a>
+    </li>
+      {% if user.is_authenticated %}
+          </li>
+      <li class="nav-item">
+      <a class="nav-link" href="{% url 'logout' %}">Çıkış</a>
+    </li>
+      {% endif %}
+  </ul>
+</nav>
+<! End Navbar >
+<br>
+<br><br><br><br>
+<!-- ==== Giriş Yap ==== -->
+<div class="login" align="center">
+	<h3>Giriş Yap</h3><br>
+    <form method="post">{% csrf_token %}
+        <input type="text" name="username" required id="id_username" class="form-control" placeholder="Kullanıcı adı">
+        <input type="password" name="password"  required id="id_password" class="form-control" placeholder="Şifre">
+        <button type="submit" class="btn btn-dark btn-danger btn-large" align="center" >Giriş Yap</button>
+    </form>
+</div>
+<script src='//production-assets.codepen.io/assets/common/stopExecutionOnTimeout-b2a7b3fe212eaa732349046d8416e00a9dec26eb7fd347590fbced3ab38af52e.js'></script>
+</body>
+<br><br><br>
+<!-- ========Footer======= -->
+<br><br>
+<footer>
+        	<div class="footer-top">
+		        <div class="container">
+		        	<div class="row">
+		        		<div class="col-md-4 col-lg-4 footer-about wow fadeInUp animated" style="visibility: visible; animation-name: fadeInUp;">
+		        			<img class="logo-footer" src="{% static '../media/img/logo3.png' %} "alt="logo-footer" data-at2x="/Media/img/logo3.png" width="850" height="150">
+		        			<p>
+
+		        			</p>
+		        			<p><a href="#"></a></p>
+	                    </div>
+		        		<div class="col-md-4 col-lg-4 offset-lg-1 footer-contact wow fadeInDown animated" style="visibility: visible; animation-name: fadeInDown;">
+		        			<h3>İletişim</h3>
+		                	<p><i class="fa fa-globe" aria-hidden="true"></i></i> Istanbul, Turkey</p>
+		                	<p><i class="fa fa-phone" aria-hidden="true"></i></i> Telefon: (0039) 333 12 68 347</p>
+		                	<p><i class="fa fa-envelope" aria-hidden="true"></i></i> Email: <a href="mailto:hello@domain.com">hello@domain.com</a></p>
+		                	<p><i class="fa fa-skype" aria-hidden="true"></i></i> Skype: you_online</p>
+	                    </div>
+	                    <div class="col-md-4 col-lg-3 footer-social wow fadeInUp animated" style="visibility: visible; animation-name: fadeInUp;">
+	                    	<h3>Bizi Takip Edin</h3>
+	                    	<p>
+	                    		<a href="#"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
+								<a href="#"><i class="fa fa-twitter-square" aria-hidden="true"></i></a>
+								<a href="#"><i class="fa fa-google-plus-square" aria-hidden="true"></i></a>
+								<a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+	                    	</p>
+	                    </div>
+		            </div>
+		        </div>
+	        </div>
+</footer>
+</html>
