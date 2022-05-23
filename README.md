@@ -4,3 +4,5 @@ Vatandaşların geri dönüşüme katkıda bulunmaları amacıyla hazırlanan we
 Web tabanlı geri dönüşüm bilgi sistemi, vatandaşların dijital ortamda belediye üzerinden temizlik firması ile randevu oluşturmalarını amaçlamaktadır.
 Geri dönüşüm bilgi sistemi, çevre dostu olan vatandaşları mağduriyet yaşatmayarak oldukça memnun edecek ve projeye teşvik edecektir. 
 Oluşturdukları randevu ile atıkları evlerinden alınacaktır.
+
+![GitHub last commit](https://img.shields.io/github/last-commit/eminmerall/GeriDonusum)
