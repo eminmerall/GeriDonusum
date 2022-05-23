@@ -5,3 +5,5 @@ Web tabanlı geri dönüşüm bilgi sistemi, vatandaşların dijital ortamda bel
 Geri dönüşüm bilgi sistemi, çevre dostu olan vatandaşları mağduriyet yaşatmayarak oldukça memnun edecek ve projeye teşvik edecektir. 
 Oluşturdukları randevu ile atıkları evlerinden alınacaktır.
 
+Proje, Python-Django kullanılarak oluşturuldu. Üyelik, Site yönetimi, modüllere özel işlemler Django admin panelinden yönetilmektedir. Projede ayrıca, Bootstrap, Jquery, Datatable gibi kütüphaneler de kullanılmıştır.
+
